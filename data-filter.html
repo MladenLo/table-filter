@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data Filter HTML</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<style type="text/css">
+		.active {
+			background-color: red;
+		}
+		/*MladenLo added for test*/
+		.filter-hide {
+			display: none;
+		}
+		.filter-show {
+			display: table-row;
+		}
+	</style>
+</head>
+<body>
+	<section id="table" class="container">
+		<div id="filters" class="container">
+			<div class="nationals">
+				<a id="srbFilter" class="category-item filter-btn active" data-filter="srb">Srbija</a>
+				<a id="gerFilter" class="category-item filter-btn active" data-filter="ger">Nemacka</a>
+			</div>
+			<div class="actions">
+				<a id="fransizaType" class="category-item filter-btn active" data-filter="fra">Franšiza</a>
+				<a id="veleprodajaType" class="category-item filter-btn active" data-filter="vel">Veleprodaja</a>
+				<a id="maloprodajaType" class="category-item filter-btn active" data-filter="mal">Maloprodaja</a>
+			</div>
+		</div>
+		<table id="posts">
+			<thead>
+				<th>Država</th>
+				<th>Tip</th>
+				<th>Telefon</th>
+				<th class="alignRight">Adresa</th>
+			</thead>
+			<tbody id="filter-table" class="myTable">
+				<tr class="firstTr item" data-filter="srb fra">
+					<td>Srbija</td>
+					<td>Fransiza</td>
+					<td>+381 234628</td>
+					<td class="table-text">Lorem ipsum dolor sit amet</td>
+				</tr>
+				
+				<tr class="item" data-filter="srb vel">
+					<td>Srbija</td>
+					<td>Veleprodaja</td>
+					<td>+381 9283747492</td>
+					<td class="table-text">Consectetor aioiscing elit</td>
+				</tr>
+
+				<tr class="item" data-filter="srb mal">
+					<td>Srbija</td>
+					<td>Maloprodaja</td>
+					<td>+381 9283747</td>
+					<td class="table-text">Nunc maximus turpis</td>
+				</tr>
+
+				<tr class="item" data-filter="srb fra">
+					<td>Srbija</td>
+					<td>Fransiza</td>
+					<td>+381 27693423</td>
+					<td class="table-text">Donec blandit quam</td>
+				</tr>
+
+				<tr class="item" data-filter="ger fra">
+					<td>Nemacka</td>
+					<td>Fransiza</td>
+					<td>+49 276336325687</td>
+					<td class="table-text">Nec tindicunt augue ullamcoper</td>
+				</tr>
+
+				<tr class="item" data-filter="ger fra">
+					<td>Nemacka</td>
+					<td>Fransiza</td>
+					<td>+49 238942934</td>
+					<td class="table-text">Vivamus vitae lacus</td>
+				</tr>
+
+				<tr class="bgd-tRow item" data-filter="srb fra">
+					<td>Srbija</td>
+					<td>Fransiza</td>
+					<td>+381 23846923234</td>
+					<td class="table-text">Interdum er malesuada fames</td>
+				</tr>
+
+				<tr class="item" data-filter="ger fra">
+					<td>Nemacka</td>
+					<td>Fransiza</td>
+					<td>+49 23619509</td>
+					<td class="table-text">Ac ante ipsum primis in faucibus</td>
+				</tr>
+
+				<tr class="item" data-filter="ger vel">
+					<td>Nemacka</td>
+					<td>Veleprodaja</td>
+					<td>+49 846597456</td>
+					<td class="table-text">Nam non odio vel</td>
+				</tr>	   
+				
+				<tr class="item" data-filter="ger vel">
+					<td>Nemacka</td>
+					<td>Veleprodaja</td>
+					<td>+49 493856238456</td>
+					<td class="table-text">Duis libero urna</td>
+				</tr>	   
+
+				<tr class="item" data-filter="srb mal">
+					<td>Srbija</td>
+					<td>Maloprodaja</td>
+					<td>+381 42569845</td>
+					<td class="table-text">Dignissim vitae mattis ut</td>
+				</tr>
+				
+				<tr class="item" data-filter="ger fra">
+					<td>Nemacka</td>
+					<td>Fransiza</td>
+					<td>+49 4385608465</td>
+					<td class="table-text">Vestibulum eget purus</td>
+				</tr>
+
+				<tr class="item" data-filter="ger mal">
+					<td>Nemacka</td>
+					<td>Maloprodaja</td>
+					<td>+49 237845287345</td>
+					<td class="table-text">Aenean hendrerit lacinia nisi</td>
+				</tr>
+
+				<tr class="item" data-filter="srb mal">
+					<td>Srbija</td>
+					<td>Maloprodaja</td>
+					<td>+381 3867364</td>
+					<td class="table-text">Nullam vitaeimprediet neque</td>
+				</tr>
+
+				<tr class="item" data-filter="srb mal">
+					<td>Srbija</td>
+					<td>Maloprodaja</td>
+					<td>+381 387642873856</td>
+					<td class="table-text">Donec laoreet lorem</td>
+				</tr>
+				
+				<tr class="item" data-filter="srb fra">
+					<td>Srbija</td>
+					<td>Fransiza</td>
+					<td>+381 374729384</td>
+					<td class="table-text">In et varius erat</td>
+				</tr>
+
+				<tr class="item" data-filter="srb mal">
+					<td>Srbija</td>
+					<td>Maloprodaja</td>
+					<td>+381 237846392</td>
+					<td class="table-text">Mauris eleifend tellus non</td>
+				</tr>
+
+				<tr class="item" data-filter="srb fra">
+					<td>Srbija</td>
+					<td>Fransiza</td>
+					<td>+381 23984769287</td>
+					<td class="table-text">In et varius erat</td>
+				</tr>
+
+			</tbody>	
+		</table>
+	</section>
+	<script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
+	<script src="data-filter.js"></script>
+</body>
+</html>

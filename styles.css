@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Filters*/
+#filters {
+    display: flex;
+    justify-content: start;
+    width: 80%;
+    margin-bottom: 80px;
+    padding: 0;
+}
+#filters .nationals a:last-child {
+    margin-left: 10px;
+}
+#filters .actions a {
+    margin-right: 10px;
+}
+#filters .actions a:last-child {
+    margin-right: 10px;
+}
+
+.nationals {
+    flex: 1;
+}
+.actions {
+    flex: 2;
+}
+#filters a {
+    background: #d5d2d2;
+    color: white;
+    padding: 10px 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#filters .active {
+    background: #e31717;
+    color: white;
+    padding: 10px 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*TABLE*/
+#table {
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+table {
+    font-family: 'Titillium Web', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+}
+.table-text {
+    text-align: right;
+}
+.bgd-tRow {
+    background: #e3e3e3;
+}
+.alignRight {
+    text-align: right;
+}
+tbody {
+    padding-top: 30px;
+}
+.firstTr {
+    margin-top: 30px;
+}
+th {
+    border-bottom: 1px solid #c3c3c3;
+    border-width: 80%;
+    padding: 8px;
+}
+
+td {
+    border-bottom: 1px solid #e3e3e3;
+    border-width: 80%;
+    padding: 8px;
+}
+
+@media all and (max-width: 768px) {
+    #filters {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 80px;
+        padding: 0;
+        align-items: baseline;
+    }
+    #filters a {
+        background: #d5d2d2;
+        color: white;
+        padding: 10px 30px;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 2px;
+        display: flex;
+        justify-content: center;
+    }
+    .nationals {
+        flex: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .actions {
+        flex: none;
+        display: flex;
+        flex-direction: column;
+    }
+}
